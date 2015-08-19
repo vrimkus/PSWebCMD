@@ -91,7 +91,7 @@
             else
             {
                 $User = $Context.User.Identity.Name
-                if (-not $Context.User.IsInRole('PSWebCMD '))
+                if (-not $Context.User.IsInRole('Domain Admins'))
                 {
                     $StatusCode    = 403
                     $ResponseData  = 'UNAUTHORIZED - invalid access.'
